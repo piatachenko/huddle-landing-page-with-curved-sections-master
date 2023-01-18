@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: hsl(191, 100%, 12%);
+  font-weight: 700;
+}
+
+p,
+button,
+footer {
+  font-family: "Open Sans", sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+.logo {
+  width: 8em;
+  height: auto;
+  object-fit: contain;
+}
+
+button:hover,
+nav .logo:hover {
+  cursor: pointer;
+}
+
+.try-it-btn {
+  padding: 0.5em 2.1em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: hsl(321, 100%, 78%);
+  background-color: hsl(0, 0%, 100%);
+  border: 0.1em solid hsl(321, 100%, 78%);
+  border-radius: 1.8em;
+  box-shadow: 0 0 0.2em hsl(321, 100%, 78%);
+}
+
+.get-started-btn {
+  padding: 0.9em 3.3em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(322, 100%, 66%);
+  border: 0.1em solid hsl(322, 100%, 66%);
+  border-radius: 1.8em;
+  box-shadow: 0 0 0.3em hsl(322, 100%, 66%);
+}
+
+main header,
+article,
+section.get-started {
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  max-width: 100%;
+}
+
+#main-image {
+  max-width: 80%;
+}
+
+main header,
+article.about > img,
+article.about div > img,
+article.about.clear div > p,
+article.about div div > p,
+section.get-started,
+footer div div,
+footer div form {
+  max-width: min(45ch, 90%);
+  margin: auto;
+}
+
+main header {
+  margin: 8em auto;
+}
+
+header p {
+  margin-bottom: 4em;
+  margin-top: 1.5em;
+  font-weight: 600;
+  color: hsl(191, 100%, 12%);
+}
+
+article.numbers {
+  max-width: 30ch;
+  margin: 1em auto 10em;
+  color: hsl(0, 0%, 70%);
+}
+
+article.numbers div img {
+  width: 13%;
+  margin: 7em 9em -0.5em 0;
+}
+
+strong {
+  color: hsl(191, 100%, 12%);
+}
+
+strong.big {
+  font-size: 4.3rem;
+}
+
+strong.small {
+  font-size: 3.95rem;
+}
+
+picture img,
+picture {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: -0.4em;
+}
+
+article.about.bg div {
+  background-color: rgb(246, 251, 255);
+}
+
+article.about div > img,
+article.about > img {
+  margin: 6em auto;
+}
+
+article.about div > p,
+article.about div div > p {
+  padding: 1em 0 5em;
+  color: hsl(191, 100%, 12%);
+  font-weight: 600;
+}
+
+section.get-started {
+  margin: 10em auto;
+}
+
+section.get-started h1 {
+  margin-bottom: 2em;
+}
+
+footer {
+  color: rgb(230, 229, 244);
+}
+
+footer div {
+  background-color: rgb(0, 37, 46);
+}
+
+.logo-white {
+  width: 12em;
+  height: auto;
+  object-fit: contain;
+}
+
+footer div form {
+  padding: 7em 0;
+}
+
+form h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1em auto;
+}
+
+input {
+  min-height: 4em;
+  border: none;
+  border-radius: 0.5em;
+  margin-right: 1em;
+  margin-top: 2em;
+}
+
+#email-subscribing {
+  box-sizing: border-box;
+  width: calc(100% - 1em);
+  max-width: 60ch;
+  padding: 0 1em;
+  text-align: center;
+}
+
+#subscribe {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(322, 100%, 66%);
+  float: right;
+  width: 12em;
+  padding-left: 3em;
+  padding-right: 3em;
+  font-weight: 700;
+}
+
+.contacts {
+  margin-top: 7em;
+  padding-bottom: 4em;
+}
+
+footer div div p {
+  margin: 1em 0 2.5em;
+}
+
+footer div div div {
+  margin-bottom: 1em;
+  margin-left: 0;
+}
+
+.icon {
+  width: 1.5em;
+  height: auto;
+  margin-right: 1em;
+  margin-top: 1.5em;
+}
+
+@media (min-width: 768px) {
+  main header,
+  section.get-started {
+    max-width: 100%;
+  }
+
+  main header p {
+    max-width: 55ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  article.numbers {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+
+  article.about div > img,
+  article.about > img,
+  article.about.clear div,
+  article.about div div {
+    margin: 1em 2em;
+  }
+
+  article.about.clear {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  article.about.bg div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  article.about.bg div div {
+    display: block;
+  }
+
+  article.about.clear div > p,
+  article.about div div > p {
+    max-width: 45ch;
+  }
+
+  article.about.bg div {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  article.about.clear div {
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
+
+  article.about div > p,
+  article.about div div > p {
+    padding: 1em 0 0;
+  }
+
+  footer div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+
+  footer div.contacts,
+  footer div.contacts div {
+    display: block;
+  }
+
+  footer div div,
+  footer div form {
+    max-width: 45ch;
+  }
+
+  footer div div p {
+    max-width: 90%;
+  }
+
+  footer div div {
+    margin-left: 2.5em;
+    margin-right: 2em;
+  }
+
+  footer div form {
+    margin-right: 1.3em;
+  }
+
+  article.about.bg div div,
+  article.about.clear div {
+    text-align: left;
+  }
+
+  article.about > img,
+  article.about div > img {
+    max-width: 60ch;
+  }
+
+  @media (min-width: 1000px) {
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    footer div form {
+      max-width: 53ch;
+      vertical-align: top;
+    }
+
+    footer div form p {
+      max-width: 45ch;
+    }
+
+    #email-subscribing {
+      max-width: 40ch;
+    }
+  }
+}
